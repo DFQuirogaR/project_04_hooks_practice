@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import { useReducer } from 'react'
 
 export const UseReducer = () => {
@@ -37,8 +36,3 @@ export const UseReducer = () => {
     </div>
   )
 };
-
-UseReducer.propTypes = {
-    count: PropTypes.number.isRequired,
-    setCount: PropTypes.func.isRequired
-}

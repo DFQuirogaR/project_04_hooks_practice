@@ -14,7 +14,7 @@ export const UseMemo = ({count, setCount}) => {
   return (
     <div>
         <h2>Exercise Hook useMemo</h2>
-        <button className='increment-button' onClick={() => setCount(count +1)}>            
+        <button className='increment-button' onClick={() => setCount(count +1)}>
             Increment
         </button>
         <button onClick={handleSquare}>

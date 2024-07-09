@@ -12,7 +12,7 @@ function App() {
     //Actualiza el titulo del documento con el count (pestaña de la página)
     document.title = `Count is ${count}`;
   }, [count]);
-  
+
 
   return (
     <>
@@ -25,7 +25,7 @@ function App() {
         </button>
         <hr />
       </div>
-      <UseReducer/>
+      <UseReducer count={count} setCount={setCount}/>
       <UseRef count={count} setCount={setCount}/>
       <UseMemo count={count} setCount={setCount}/>
     </>

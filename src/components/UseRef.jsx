@@ -7,13 +7,14 @@ export const UseRef = ({ count, setCount }) => {
     const countRef = useRef();
 
     const handleClick =()=> {
+        const newCount = count + 1;
         setCount(count + 1);
-        countRef.current.textContent = `Count ins now ${count + 1}`;
+        countRef.current.textContent = `Count is now ${newCount}`;
     }
 
     const handleDoubleClick = () =>{
         setCount(0);
-        countRef.current.textContent = `Count ins now 0`;
+        countRef.current.textContent = `Count is now 0`;
     }
 
   return (
